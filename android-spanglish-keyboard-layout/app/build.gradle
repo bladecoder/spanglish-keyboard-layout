@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.bladecoder"
+    sourceCompatibility = 11
+    compileSdkVersion 'android-33'
+
+    defaultConfig {
+        applicationId "com.bladecoder.spanglish_keyboard_layout"
+        minSdkVersion 16
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    if (project.hasProperty('keystore')) {
+        signingConfigs {
+            release {
+                storeFile file(project.keystore)
+                storePassword project.storePassword
+                keyAlias project.alias
+                keyPassword project.keyPassword
+            }
+        }
+
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+}

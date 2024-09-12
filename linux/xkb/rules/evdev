@@ -1,0 +1,4 @@
+! option   = symbols
+  spanglish:spanglish  = +spanglish(spanglish)
+
+! include %S/evdev

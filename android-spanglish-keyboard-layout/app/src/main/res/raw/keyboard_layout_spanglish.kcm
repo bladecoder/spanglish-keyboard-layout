@@ -1,0 +1,42 @@
+type OVERLAY
+
+key SEMICOLON {
+    label:                              '\u00d1'
+    base:                               '\u00f1'
+    shift, capslock:                    '\u00d1'
+    shift+capslock:                     '\u00f1'
+}
+key APOSTROPHE {
+    label:                              '\u00b4'
+    base:                               '\u0301'
+    shift:                              '"'
+    ralt:                               '\''
+}
+
+
+key COMMA {
+    label:                              ','
+    base:                               ','
+    shift:                              ';'
+    ralt:                               '<'
+}
+key PERIOD {
+    label:                              '.'
+    base:                               '.'
+    shift:                              ':'
+    ralt:                               '>'
+}
+key 1 {
+    label:                              '1'
+    base:                               '1'
+    shift:                              '!'
+    ralt:                               '\u00a1'
+    ralt+shift:                         '\u00b9'
+}
+
+key SLASH {
+    label:                              '/'
+    base:                               '/'
+    shift:                              '?'
+    ralt:                               '\u00bf'
+}

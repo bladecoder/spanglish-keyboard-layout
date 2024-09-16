@@ -7,10 +7,13 @@ xkb_symbols "spanglish" {
     name[Group1]="Spanish (Spanglish)";
 
     key <AE01> { [	   1,     exclam,    exclamdown,      onesuperior ] };
-    key <AC10>	{ [ntilde, Ntilde, dead_diaeresis, ccedilla ] };
-    key <AC11>	{ [dead_acute, quotedbl, apostrophe, Ccedilla ] };
-    //key <AB10> { [     slash,   question,  questiondown,        dead_hook ] };
-    key <AB08>	{[   comma,	 semicolon, less		]};
+    key <AD03>  { [  e,   E,   EuroSign ]      };
+    key <AD07>  {[       u,      U, dead_diaeresis   ]};
+    key <AC10>	{ [ntilde, Ntilde, dead_diaeresis ] };
+    key <AC11>	{ [dead_acute, quotedbl, apostrophe ] };
+    key <AB10> { [     slash,   question,  questiondown,        dead_hook ] };
+    key <AB08>	{[   comma,	 semicolon, less	]};
     key <AB09>	{[  period,	 colon, greater	]};
+    key <AB03>  {[       c,      C, ccedilla,   Ccedilla  ]};
 };
 

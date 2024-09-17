@@ -18,7 +18,7 @@ Por ahora los sistemas operativos soportados son MacOs, Linux y Android.
 MacOS
 =====
 
-Copiar la carpeta `spanglish.bundle` a `$HOME/Keyboard\ Layouts`.
+Copiar la carpeta `spanglish.bundle` a `$HOME/Library/Keyboard\ Layouts`.
 
 Una vez copiada, cerrar la sesión y volver a entrar. En la configuración de teclado aparecerá la nueva disposición **Spanglish**.
 
